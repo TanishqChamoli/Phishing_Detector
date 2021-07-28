@@ -1,0 +1,43 @@
+body{
+    background-color:#39404A;
+}  
+
+form{
+    border-radius: 5px;;
+    box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    -moz-box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    margin-top:140px !important;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+button{
+
+        margin-left: 120px !important;
+        padding:10px 80px !important;
+
+}
+
+
+.container-fluid{
+
+    border-radius: 5px;;
+    box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    -moz-box-shadow: -11px 10px 58px 20px rgba(0,0,0,0.28);
+    margin-top:1px !important;
+   
+    background-image: linear-gradient(to right top, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+
+
+.result{
+   
+  width: 450px;
+  height: 250px;
+
+}
+.form{
+    background-image: linear-gradient(to right top, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) !important;
+    margin-top: 200px !important;
+}

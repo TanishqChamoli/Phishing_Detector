@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+    {% block body %}
+    <div class="container-fluid p-4  ">
+       <h3 class="font-weight-bold text-center">Phishing Detector</h3>
+    </div>
+    <div class="">
+        <div class=" row  justify-content-center ">
+            
+            <form class=" col-lg-5 p-5  bg-light text-dark border border-success" action="/predict" method="POST">
+                <label for="basic-url" class="form-label font-weight-bold ">Enter Your Url</label>
+                <div class="input-group mb-3 ">
+                    <span class="input-group-text " id="basic-addon3">https://example.com/</span>
+                    <input type="text" class="form-control" name="link" id="basic-url" aria-describedby="basic-addon3" required>
+                </div>
+
+                <div>
+                    <select class="custom-select" name="model">
+                        <option selected>Select Model</option>
+                        <option value="1">Random Forest</option>
+                        <option value="2">Decision Tree</option>
+                        <option value="3">SVM</option>
+                        <option value="4">XGBoost (Best Performing)</option>
+                      </select>
+                </div>
+                <button type="submit" class="btn btn-primary my-5 text-center">check</button>
+            </form>
+
+            
+        </div>
+    </div>
+  
+
+
+
+    {% endblock %}
+
+
+

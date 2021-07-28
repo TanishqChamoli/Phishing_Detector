@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Result Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+{% block body %}
+<div class="container-fluid p-4  ">
+    <h3 class="font-weight-bold text-center">Phishing Detector</h3>
+</div>
+
+<div class=" row  justify-content-center  ">
+
+
+    <div class=" col-lg-5 p-5 form   text-dark border border-success" action="/predict" method="POST">
+        {% if pred  %}
+        <h2 class="mb-5 text-center fs-1">Legit Website Link </h2>
+        <a href="/" class="btn btn-dark float-start">Back</a>
+        <a href="{{link}}" class="btn btn-dark float-end">visit Link</a>
+        {% else %}
+        <h2 class="mb-5 text-center fs-1"> Fake Link</h2>
+        <a href="/" class="btn btn-dark float-start">Back</a>
+        
+        {% endif %}
+    </div>
+
+
+
+</div>
+
+
+{% endblock %}
+
+
+
+
